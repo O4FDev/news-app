@@ -4,10 +4,17 @@ on:
     branches:
       - master
 jobs:
-  install-and-test:
+  install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install npm dependencies
         run: |
-          npm install && npm run test --verbose --maxWorkers=2
+          npm install
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Testing React Native
+        run: |
+          npm run test --verbose --maxWorkers=2
