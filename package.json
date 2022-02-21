@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./ --fix"
   },
   "dependencies": {
-    "expo": "~44.0.2",
+    "expo": "~44.0.6",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
